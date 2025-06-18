@@ -1,0 +1,237 @@
+* {
+    font-family: sans-serif;
+}
+body {
+    display: flex;
+    margin: 0;
+}
+#canvas {
+    background: #eeeeee;
+    min-height: 97vh;
+    min-width: 100vw;
+}
+
+#textIcon {
+    width: auto;
+    padding: 0.8vh 0.5vw;
+    border-radius: 5px;
+    border: #000000 2px solid;
+    margin-top: 2vh;
+    text-align: center;
+    margin-left: 0;
+}
+
+#textIcon:hover {
+    cursor: pointer;
+}
+
+#inputSize {
+    width: 3vw;
+    height: 4vh;
+    padding: 0.2vh 0.4vw;
+    border: #000000 solid 2px;
+}
+
+#components {
+    margin-inline: 1vw;
+    background-color: #898989 2px;
+    min-width: 30vh;
+    min-height: 97vh;
+}
+
+#textfield {
+    align-items: center;
+}
+
+#colorValue {
+    border: #000000 solid 2px;
+    width: 8vw;
+}
+
+#textCreate {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    float: right;
+    margin-top: 1vh;
+    margin-right: 0.3vw;
+    padding-block: .8vh;
+    border-radius: 15%;
+    border: #000000 2px solid;
+}
+
+#arrow {
+    margin-left: 80%;
+}
+
+#arrow:hover {
+    cursor: pointer;
+}
+
+#textCreate:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #000000;
+    animation-duration: 300ms;
+}
+
+#imageCreate {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    float: right;
+    margin-top: 1vh;
+    margin-right: 0.3vw;
+    padding-block: .8vh;
+    border-radius: 15%;
+    border : 2px solid 
+}
+
+#imageCreate:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #000000;
+    animation-duration: 300ms;
+}
+
+#imagefield {
+    margin-top: 1vh;
+}
+
+.sideBarText {
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-inline: .1vw;
+    margin-top: 1vh;
+    cursor: pointer;
+    padding-inline: 1vw;
+    padding-block: .5vh;
+}
+.sideBarText:hover {
+    background-color: #cfcfcf;
+    border-radius: 10px;
+    animation-duration: 300ms;
+}
+
+.btn {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 5px;
+    padding-inline: 1vw;
+    padding-block: .8vh;
+    float: right;
+    margin-top: .5vh;
+    border: #000000 2px solid;
+    cursor: pointer;
+}
+
+.editButton {
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 5px;
+    padding-inline: 1vw;
+    padding-block: .8vh;
+    margin-top: .5vh;
+    border: #000000 2px solid;
+    cursor: pointer;
+}
+
+.editButton:hover {
+    background-color: #ffffff;
+    color: #000000;
+    animation-duration: 300ms;
+}
+
+.btn:hover {
+    background-color: #ffffff;
+    color: #000000;
+    animation-duration: 300ms;
+}
+
+.imageSideBarDiv {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: .8vw;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 1vh;
+    padding-block: .5vh;
+}
+
+.imageSideBarDiv:hover{
+    background-color: #cfcfcf;
+    animation-duration: 300ms;
+}
+
+#addbtn {
+    border: 2px solid;
+    border-radius: 5px;
+    padding-inline: 1vw;
+    padding-block: 1.2vh;
+    width: auto;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 1vh;
+}
+
+#imagebutton {
+    margin-bottom: 1vh;
+    border: 2px solid;
+    border-radius: 5px;
+    padding-inline: 1vw;
+    padding-block: 1.2vh;
+    width: auto;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 1vh;
+}
+
+#menu {
+    display: none;
+}
+
+#textform , #btnform ,#videoform1 , #imageform1 {
+    display: table;
+}
+
+#textform , #btnform ,#videoform1 , #imageform1 > div {
+    display: table-caption;
+}
+
+@media (max-width: 680px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        overflow:hidden;
+    }
+    #menu {
+        display: block;
+    }
+    #components {
+        display: none;
+        position: absolute;
+        width: 96vw;
+        background-color: #ffffff;
+    }
+    #textform , #btnform ,#videoform1 , #imageform1 {
+        height: 32vh;
+        width: auto;
+    }
+
+    #imageform1 {
+        height: 32vh !important;
+    }
+
+    #arrow {
+        height: 4vh;
+        width: 6vw !important;
+        border-radius: 2px;
+        margin-right: 2vw;
+    }
+}
+
+#main {
+    margin-inline: 1vw;
+}

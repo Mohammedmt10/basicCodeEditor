@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Website Builder</title>
+        <meta name="viewport" content="width=device-width , initial-scale=1.0" />
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <script src="index.js"></script>
+    <body>
+        <div id="main">
+            <div id="menu" onclick="openSideBar()">
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" style = "height:3.5vh; margin:1vw; cursor:pointer; border:2px solid; border-radius: 10px; padding-block:.2vh ; padding-inline :.4vh"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" /></svg>
+        </div>
+        <div id="components">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" id="arrow" style="width: 1.5vw; color:aliceblue;background-color:rgb(35, 35, 35);margin-top:2vh; padding:.5vh .5vw; border-radius:20%;" onclick="closeSideBar()">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5 3 12m0 0 7.5-7.5M3 12h18"/>
+            </svg>
+        <div>
+            <div id="textfield">
+                <div id="textIcon" draggable="true" onclick="textForm()">
+                    Text
+                </div>
+            </div>
+        <div id="textOutput"></div>
+        </div>
+        <div id="imagefield">
+            <div onclick="imageForm()" id="imagebutton">
+                Image
+            </div>
+            <div id="imageForm" style="margin-left: 1vw;">
+
+            </div>
+        </div>
+        <div>
+            <div id="imageOutputs">
+        </div>
+        </div>
+        <div id="videofield">
+            <div onclick="videoForm()" style="border: 2px solid; text-align :center;height: fit-content;border-radius: 5px; cursor: pointer; padding-block: 1vh;">
+                <div style="margin-top: 1vh;">Video</div>                
+            </div>
+            <div id="videoForm" style="margin-left: 1vw;">
+
+            </div>
+        </div>
+        <div>
+            <div id="videoOutputs">
+        </div>
+        </div>
+        <div>
+            <div id="btnfield">
+                <div id="addbtn" draggable="true" onclick="buttonForm()">
+                    Buttons
+                </div>
+            </div>
+        <div id="btnOutput"></div>
+        </div>
+        </div>
+        </div>
+        <div id="canvas" ondragover="dragOverHandler(event)" ondrop="dropHandler(event)">
+        </div>
+    </body>
+</html>
