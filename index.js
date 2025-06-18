@@ -120,12 +120,15 @@ function textForm() {
             coloreditfield.defaultValue = color
             textinpfield.defaultValue = text
             sizeinpfield.defaultValue = size;
+            Icons.style.display = "none"
             
             btn.addEventListener('click', () => {
                 sideBarSpan.innerHTML = textinpfield.value;
                 div.innerHTML = textinpfield.value
                 div.style.fontSize = sizeinpfield.value + 'px';
                 div.style.color = coloreditfield.value;
+                
+                Icons.style.display = "flex"
             });
 
         })
@@ -262,7 +265,7 @@ function imageForm() {
 
             imgOutput.appendChild(editDiv);
             imgOutput.appendChild(editbtn);
-
+            imgOutputIcons.style.display = "flex"
 
         });
         
@@ -393,6 +396,7 @@ function videoForm() {
             
             editbtn.className = "editButton"
             
+            videoOutputIcons.style.display = "none"
             editbtn.addEventListener('click' , () => {
                 videoEle.src = editUrl.value
                 videoEle.style.height = editHeight.value + 'px';
@@ -410,6 +414,7 @@ function videoForm() {
             videoOutput.appendChild(editDiv);
             videoOutput.appendChild(editbtn);
             
+            videoOutputIcons.style.display = "flex"
             
         });
         
