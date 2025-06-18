@@ -110,6 +110,7 @@ function textForm() {
             const sizeinpfield = document.createElement('input');
             const btn = document.createElement('button')
             btn.innerHTML = "edit"
+            btn.className = "editButtons"
 
             sideBarSpan.appendChild(textinpfield);
             sideBarSpan.appendChild(coloreditfield);
@@ -180,6 +181,7 @@ function imageForm() {
     
     const closeIcon = document.createElement('div');
     closeIcon.innerHTML = "&#10006;"
+    closeIcon.style.width = "fit-content"
     closeIcon.style.float = "right"
     closeIcon.style.cursor = "pointer"
     closeIcon.addEventListener('click',() => {
@@ -230,6 +232,7 @@ function imageForm() {
             const editDiv = document.createElement('div');
 
             editbtn.innerHTML = "edit"
+            btn.className = "editButtons"
 
             editUrl.defaultValue = imgEle.src
             editHeight.defaultValue = imgEle.height
@@ -306,7 +309,8 @@ function imageForm() {
     div.appendChild(widthDiv)
     div.appendChild(btn);
 
-    div.style.height = "22%"
+    // div.style.height = "22%"
+    div.style.marginBottom = "2vh"
     div.id = "imageform1"
 
     document.getElementById('imageForm').appendChild(div)
@@ -375,6 +379,7 @@ function videoForm() {
             const editDiv = document.createElement('div');
             
             editbtn.innerHTML = "edit"
+            btn.className = "editButtons"
             
             editUrl.defaultValue = videoEle.src
             editHeight.defaultValue = videoEle.height
@@ -478,6 +483,7 @@ function buttonForm() {
     
     closeIcon.innerHTML = "&#10006;"
     closeIcon.style.float = "right"
+    closeIcon.style.display = "block"
     closeIcon.style.cursor = "pointer"
     closeIcon.addEventListener('click',() => {
         closeIcon.parentNode.parentNode.removeChild(closeIcon.parentNode);
@@ -528,6 +534,7 @@ function buttonForm() {
             const bginpfield = document.createElement('input');
             const btn = document.createElement('button')
             btn.innerHTML = "edit"
+            btn.className = "editButtons"
             
             sideBarSpan.appendChild(textinpfield);
             sideBarSpan.appendChild(coloreditfield);

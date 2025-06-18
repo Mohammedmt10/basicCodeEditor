@@ -196,8 +196,21 @@ body {
     display: table;
 }
 
-#textform , #btnform ,#videoform1 , #imageform1 > div {
+#textform , #btnform ,#videoform1 > div {
     display: table-caption;
+}
+
+.editButtons {
+    background-color: #000000;
+    color: #ffffff;
+    border: 2px solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.editButtons:hover {
+    background-color: #ffffff;
+    color: #000000;
 }
 
 @media (max-width: 680px) {
