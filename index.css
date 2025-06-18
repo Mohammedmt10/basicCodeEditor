@@ -196,7 +196,7 @@ body {
     display: table;
 }
 
-#textform , #btnform ,#videoform1 > div {
+#textform , #btnform  > div {
     display: table-caption;
 }
 
