@@ -544,6 +544,7 @@ function buttonForm() {
             textinpfield.defaultValue = text;
             coloreditfield.defaultValue = color;
             bginpfield.defaultValue = size;
+            Icons.style.display = "none"
             
             btn.addEventListener('click', () => {
                 sideBarSpan.innerHTML = textinpfield.value;
@@ -552,6 +553,7 @@ function buttonForm() {
                 div.style.color = coloreditfield.value;
                 sideBarDiv.appendChild(sideBarSpan);
                 sideBarDiv.appendChild(Icons)
+                Icons.style.display = "block"
             });
             
         })
