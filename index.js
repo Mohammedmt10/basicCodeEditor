@@ -48,18 +48,19 @@ function textForm() {
     const div = document.createElement('div');
     const sizeDiv = document.createElement('div')
     const sizeInp = document.createElement('input');
-    const sizeSpan = document.createElement('span')
+    const sizeSpan = document.createElement('div')
     const colorDiv = document.createElement('div');
     const colorInp = document.createElement('input');
-    const colorSpan = document.createElement('span');
+    const colorSpan = document.createElement('div');
     const textDiv = document.createElement('div');
     const textInp = document.createElement('input');
-    const textSpan = document.createElement('span');
+    const textSpan = document.createElement('div');
     const buttonElement = document.createElement('button');
     const closeIcon = document.createElement('div');
 
     closeIcon.innerHTML = "&#10006;"
     closeIcon.style.float = "right"
+    closeIcon.style.display = "inline-block"
     closeIcon.style.cursor = "pointer"
     closeIcon.addEventListener('click',() => {
         closeIcon.parentNode.parentNode.removeChild(closeIcon.parentNode);
@@ -160,7 +161,6 @@ function textForm() {
     sizeDiv.appendChild(sizeInp);
 
     div.appendChild(closeIcon)
-    closeIcon.style.marginBottom = "4vh"
     div.appendChild(textDiv)
     div.appendChild(colorDiv)
     div.appendChild(sizeDiv);
@@ -463,7 +463,7 @@ function videoForm() {
     div.appendChild(widthDiv)
     div.appendChild(btn);
     
-    div.style.height = "22%"
+    // div.style.height = "22%"
     
     document.getElementById('videoForm').appendChild(div)
 }
