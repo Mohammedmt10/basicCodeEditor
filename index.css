@@ -192,12 +192,12 @@ body {
     display: none;
 }
 
-#textform , #btnform ,#videoform1 , #imageform1 {
+#textform ,#videoform1 , #imageform1 {
     display: table;
 }
 
-#textform , #btnform  > div {
-    display: table-caption;
+#textform  > div {
+    display: table-;
 }
 
 .editButtons {

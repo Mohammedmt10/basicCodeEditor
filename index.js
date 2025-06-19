@@ -165,7 +165,7 @@ function textForm() {
     div.appendChild(colorDiv)
     div.appendChild(sizeDiv);
     div.appendChild(buttonElement)
-    div.style.height = "22%"
+    // div.style.height = "22%"
     div.id = "textform"
 
     document.getElementById('textfield').appendChild(div);
